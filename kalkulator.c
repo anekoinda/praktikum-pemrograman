@@ -72,10 +72,10 @@ void menu(){
 	printf("\n[4] Pengurangan");
 	printf("\n[5] Modulus\n");
 
-    pil = isValid("Pilihan (1-5)");
-    if(isnan(pil))menu();
+	pil = isValid("Pilihan (1-5)");
+	if(isnan(pil))menu();
 
-    switch (pil){
+	switch (pil){
 	case 1 :
 		printf("\n[PERKALIAN]\n");
 
@@ -155,10 +155,10 @@ void menu(){
 		break;
     	}
 	
-    printf("\nIngin melakukan lagi? (y/t) : ");
-    scanf("%s", &pilihan);
+	printf("\nIngin melakukan lagi? (y/t) : ");
+	scanf("%s", &pilihan);
 
-    if ((pilihan == 'y') || (pilihan == 'Y')){ //jika pilihan y, maka lakukan lagi
+	if ((pilihan == 'y') || (pilihan == 'Y')){ //jika pilihan y, maka lakukan lagi
         menu(); //rekursif
     }
 }
