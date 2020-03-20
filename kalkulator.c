@@ -117,44 +117,44 @@ void menu(){
             	if(isnan(bil2))goto bil2_jumlah;
 
 		printf("Hasil %.2f + %.2f = %.2f\n", bil1, bil2, bil1+bil2);
-            break;
+            	break;
 
-		case 4 :
-		    printf("\n[PENGURANGAN]\n");
+	case 4 :
+		printf("\n[PENGURANGAN]\n");
 
-		    bil1_kurang:
-            bil1 = isAngka("bilangan 1");
-            if(isnan(bil1))goto bil1_kurang;
+		bil1_kurang:
+            	bil1 = isAngka("bilangan 1");
+            	if(isnan(bil1))goto bil1_kurang;
 
-		    bil2_kurang:
-            bil2 = isAngka("bilangan 2");
-            if(isnan(bil2))goto bil2_kurang;
+		bil2_kurang:
+            	bil2 = isAngka("bilangan 2");
+            	if(isnan(bil2))goto bil2_kurang;
 
-		    printf("Hasil %.2f - %.2f = %.2f\n", bil1, bil2, bil1-bil2);
-            break;
+		printf("Hasil %.2f - %.2f = %.2f\n", bil1, bil2, bil1-bil2);
+            	break;
 
-        case 5:
-            printf("\n[MODULUS]\n");
+	case 5:
+		printf("\n[MODULUS]\n");
 
-            mod1:
-            bil1 = isAngka("bilangan 1");
-            if(isnan(bil1))goto mod1;
+            	mod1:
+            	bil1 = isAngka("bilangan 1");
+            	if(isnan(bil1))goto mod1;
 
-		    mod2:
-            bil2 = isAngka("bilangan 2");
-            if(isnan(bil2))goto mod2;
+		mod2:
+            	bil2 = isAngka("bilangan 2");
+            	if(isnan(bil2))goto mod2;
 
-            float hasil = fmod(bil1, bil2);
+            	float hasil = fmod(bil1, bil2);
 
-		    printf("Hasil %.2f modulus %.2f = %.2f\n", bil1, bil2, hasil);
-            break;
+		printf("Hasil %.2f modulus %.2f = %.2f\n", bil1, bil2, hasil);
+            	break;
 
-         default :
-            printf("Inputan harus angka antara 1-5, coba lagi!\n");
-            menu();
-            break;
-
-    }
+	default :
+		printf("Inputan harus angka antara 1-5, coba lagi!\n");
+		menu();
+		break;
+    	}
+	
     printf("\nIngin melakukan lagi? (y/t) : ");
     scanf("%s", &pilihan);
 
