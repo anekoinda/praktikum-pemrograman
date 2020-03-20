@@ -39,56 +39,66 @@ int main(){
 
 //prosedur menampilkan garis
 void garis(int n){
-    for(i=0;i<=n;i++){
+	for(i=0;i<=n;i++){
         printf("=");
     }
 }
+
 void luas_segitiga_sembarang(){
-    s = (a+b+c)/2;
-    luas = sqrt(s*(s-a)*(s-b)*(s-c));
-    printf("\nLuas = akar(%.2f * (%.2f - %.2f) * (%.2f - %.2f) * (%.2f - %.2f))\n",s,s,a,s,b,s,c);
+	s = (a+b+c)/2;
+	luas = sqrt(s*(s-a)*(s-b)*(s-c));
+	printf("\nLuas = akar(%.2f * (%.2f - %.2f) * (%.2f - %.2f) * (%.2f - %.2f))\n",s,s,a,s,b,s,c);
 	printf("     = %.2f\n\n",luas);
 }
+
 void keliling_segitiga_sembarang(){
-    keliling = (a+b+c);
-    printf("Kll  = %.2f + %.2f + %.2f\n",a,b,c);
+	keliling = (a+b+c);
+	printf("Kll  = %.2f + %.2f + %.2f\n",a,b,c);
 	printf("     = %.2f\n\n",keliling);
 }
+
 void luas_belah_ketupat(){
 	luas = d1 * d2 * 0.5;
 	printf("\nLuas = %.2f * %.2f * 0.5\n",d1,d2);
 	printf("     = %.2f\n\n",luas);
 }
+
 void keliling_belah_ketupat(){
 	keliling = s * 4;
 	printf("Kll  = %.2f * 4\n",s);
 	printf("     = %.2f\n",keliling);
 }
+
 void luas_jajar_genjang(){
 	luas = a * t;
 	printf("\nLuas = %.2f * %.2f\n",a,t);
 	printf("     = %.2f\n\n",luas);
 }
+
 void keliling_jajar_genjang(){
 	keliling = 2 * (a+b);
 	printf("Kll  = 2 * ( %.2f + %.2f )\n",a,b);
 	printf("     = %.2f\n",keliling);
 }
+
 void luas_trapesium(){
 	luas = (a+b)*t*0.5;
 	printf("\nLuas = ( %.2f * %.2f ) * %.2f * 0.5\n",a,b,t);
 	printf("     = %.2f\n\n",luas);
 }
+
 void keliling_trapesium(){
 	keliling = a + b + sisi_kanan + sisi_kiri;
 	printf("Kll  = %.2f + %.2f + %.2f + %.2f\n",a,b,sisi_kanan,sisi_kiri);
 	printf("     = %.2f\n",keliling);
 }
+
 void luas_lingkaran(){
 	luas = PHI*r*r;
 	printf("\nLuas = %.2f * %.2f * %.2f\n",PHI,r,r);
 	printf("     = %.2f\n\n",luas);
 }
+
 void keliling_lingkaran(){
 	keliling = 2*PHI*r;
 	printf("Kll  = 2 * %.2f * %.2f\n",PHI,r);
@@ -137,23 +147,23 @@ void menu(){
 	printf("\n[5] Lingkaran\n\n");
 
 	pil = isValid("Pilihan (1-5)");
-    if(isnan(pil))menu();
+    	if(isnan(pil))menu();
 
 	switch (pil){
-		case 1 :
-		    printf("\n[SEGITIGA SEMBARANG]\n");
+	case 1 :
+		printf("\n[SEGITIGA SEMBARANG]\n");
 
-		    a:
-		    a = isAngka("sisi a");
-            if(isnan(a))goto a;
+		a:
+		a = isAngka("sisi a");
+		if(isnan(a))goto a;
 
-            b:
-		    b = isAngka("sisi b");
-            if(isnan(b))goto b;
+		b:
+		b = isAngka("sisi b");
+		if(isnan(b))goto b;
 
-            c:
-		    c = isAngka("sisi c");
-            if(isnan(c))goto c;
+		c:
+		c = isAngka("sisi c");
+		if(isnan(c))goto c;
 
             luas_segitiga_sembarang();
             keliling_segitiga_sembarang();
