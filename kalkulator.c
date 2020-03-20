@@ -76,47 +76,47 @@ void menu(){
     if(isnan(pil))menu();
 
     switch (pil){
-		case 1 :
-		    printf("\n[PERKALIAN]\n");
+	case 1 :
+		printf("\n[PERKALIAN]\n");
 
-		    bil1_kali:
-            bil1 = isAngka("bilangan 1");
-            if(isnan(bil1))goto bil1_kali;
+		bil1_kali:
+            	bil1 = isAngka("bilangan 1");
+            	if(isnan(bil1))goto bil1_kali;
 
-		    bil2_kali:
-            bil2 = isAngka("bilangan 2");
-            if(isnan(bil2))goto bil2_kali;
+		bil2_kali:
+           	bil2 = isAngka("bilangan 2");
+           	if(isnan(bil2))goto bil2_kali;
 
-		    printf("Hasil %.2f x %.2f = %.2f\n", bil1, bil2, bil1*bil2);
+		printf("Hasil %.2f x %.2f = %.2f\n", bil1, bil2, bil1*bil2);
 
-            break;
+            	break;
 
-		case 2 :
-		    printf("\n[PEMBAGIAN]\n");
+	case 2 :
+		printf("\n[PEMBAGIAN]\n");
 
-		    bil1_bagi:
-            bil1 = isAngka("bilangan 1");
-            if(isnan(bil1))goto bil1_bagi;
+		bil1_bagi:
+		bil1 = isAngka("bilangan 1");
+		if(isnan(bil1))goto bil1_bagi;
 
-		    bil2_bagi:
-            bil2 = isAngka("bilangan 2");
-            if(isnan(bil2))goto bil2_bagi;
+		bil2_bagi:
+            	bil2 = isAngka("bilangan 2");
+            	if(isnan(bil2))goto bil2_bagi;
 
-		    printf("Hasil %.2f : %.2f = %.2f\n", bil1, bil2, bil1/bil2);
-            break;
+		printf("Hasil %.2f : %.2f = %.2f\n", bil1, bil2, bil1/bil2);
+            	break;
 
-		case 3 :
-		    printf("\n[PENJUMLAHAN]\n");
+	case 3 :
+		printf("\n[PENJUMLAHAN]\n");
 
-		    bil1_jumlah:
-            bil1 = isAngka("bilangan 1");
-            if(isnan(bil1))goto bil1_jumlah;
+		bil1_jumlah:
+            	bil1 = isAngka("bilangan 1");
+            	if(isnan(bil1))goto bil1_jumlah;
 
-		    bil2_jumlah:
-            bil2 = isAngka("bilangan 2");
-            if(isnan(bil2))goto bil2_jumlah;
+		bil2_jumlah:
+            	bil2 = isAngka("bilangan 2");
+            	if(isnan(bil2))goto bil2_jumlah;
 
-		    printf("Hasil %.2f + %.2f = %.2f\n", bil1, bil2, bil1+bil2);
+		printf("Hasil %.2f + %.2f = %.2f\n", bil1, bil2, bil1+bil2);
             break;
 
 		case 4 :
